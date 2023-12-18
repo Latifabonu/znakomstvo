@@ -1,0 +1,63 @@
+.members {
+  margin: 2rem 0;
+}
+
+.users h1 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: 0em;
+}
+.users__list {
+  margin: 1rem 0;
+  overflow: auto;
+}
+.users__list_wrapper {
+  width: 1180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-card {
+  width: 220px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 0.5;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+.user-card:hover > img {
+  transform: scale(1.1);
+}
+.user-card > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  transition: all 0.3s ease-in;
+}
+.user-card > h4 {
+  position: relative;
+  display: inline-block;
+}
+.user-card > h4::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #33e159;
+  top: -10px;
+  border-radius: 50%;
+  right: -1rem;
+}
+.user-card > p img {
+  width: 16px;
+}/*# sourceMappingURL=members.css.map */
